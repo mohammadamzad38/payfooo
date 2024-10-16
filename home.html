@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>payo MFS</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.13/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+</head>
+<body>
+    <main class="flex justify-center">
+        <div class="mockup-phone">
+            <div class="camera"></div>
+            <div class="display">
+              <div class="artboard bg-slate-400 artboard-demo phone-3">
+
+                <!-- Acccount balance -->
+                  <div class="stats shadow">
+                    <div class="stat">
+                      <div id="account-balance" class="stat-value">9400</div>
+                      <div class="stat-desc">Available Balance</div>
+                    </div>
+                  </div>
+                  <div class="divider"></div>
+                  <!-- Add money and cashout feature -->
+                  <div id="" class="flex flex-wrap gap-4 w-full justify-center bg-sky-700 py-4">
+                    <button id="show-add-money-button" class="btn bg-green-300">Add Money</button>
+                    <button id="Show-cash-out-button" class="btn bg-red-400">Cash Out</button>
+                    <button id="show-tranjection-button" class="btn bg-pink-300">Tranjections</button>
+                    <button id="show-send-money-button" class="btn bg-yellow-200">Send Money</button>
+                  </div>
+                  <div class="divider"></div>
+                  <!-- Add money form Start -->
+                  <div id="add-money-form" class=" card bg-base-100 w-full max-w-sm shrink-0 shadow-2xl">
+                    <form class="card-body">
+                      <div class="form-control">
+                        <label class="label">
+                          <span class="label-text">Enter Your Ammount</span>
+                        </label>
+                        <input id="input-add-money" type="Number" placeholder="ammount" class="input input-bordered" required />
+                      </div>
+                      <div class="form-control">
+                        <label class="label">
+                          <span class="label-text">Enter Your pin Number</span>
+                        </label>
+                        <input id="input-pin-number" autocomplete="off" type="password" placeholder="Pin Number" class="input input-bordered" required />
+                      </div>
+                      <div class="form-control mt-6">
+                        <button id="btn-add-money" class="btn btn-primary bg-green-300">Add Money</button>
+                      </div>
+                    </form>
+                  </div>
+                    <!-- Add money form end -->
+
+                    <!-- cashout form start -->
+                    <div id="cash-out-form" class="hidden card bg-base-100 w-full max-w-sm shrink-0 shadow-2xl">
+                        <form class="card-body">
+                          <div class="form-control">
+                            <label class="label">
+                              <span class="label-text">Cash Out Ammount</span>
+                            </label>
+                            <input id="input-cash-out" type="Number" placeholder="ammount" class="input input-bordered" required />
+                          </div>
+                          <div class="form-control">
+                            <label class="label">
+                              <span class="label-text">Enter Your pin Number</span>
+                            </label>
+                            <input id="input-cash-out-pin" autocomplete="off" type="password" placeholder="Enter Pin" class="input input-bordered" required />
+                          </div>
+                          <div class="form-control mt-6">
+                            <button id="btn-cash-out" class="btn bg-red-400 btn-primary">cash Out</button>
+                          </div>
+                        </form>
+                      </div>
+                     <!-- cashout form end -->
+
+                      <!-- Send Money Start -->
+                      <div id="send-money-form" class="hidden card bg-base-100 w-full max-w-sm shrink-0 shadow-2xl">
+                        <form class="card-body">
+                          <div class="form-control">
+                            <label class="label">
+                              <span class="label-text">Enter Your Ammount</span>
+                            </label>
+                            <input id="send-money-input" type="Number" placeholder="ammount" class="input input-bordered" required />
+                          </div>
+                          <div class="form-control">
+                            <label class="label">
+                              <span class="label-text">Enter Your pin Number</span>
+                            </label>
+                            <input id="send-pin-number" autocomplete="off" type="password" placeholder="Pin Number" class="input input-bordered" required />
+                          </div>
+                          <div class="form-control mt-6">
+                            <button id="btn-Send-money" class="btn btn-primary font-black bg-yellow-200">Send Money</button>
+                          </div>
+                        </form>
+                      </div>
+                       <!-- Send Money End -->
+
+                     <!-- Tranjection Start -->
+                      <div id="Tranjection-section" class="hidden "><h2 class="text-4xl text-center">Tranjection History</h2>
+                        <div id="Tranjection-container" class="space-y-4 text-center">
+
+                        </div>
+                    </div>
+                      <!-- Tranjection End -->
+              </div>
+            </div>
+          </div>
+    </main>
+    <script src="./addmoney.js"></script>
+
+    <script src="./utilities.js"></script>
+
+    <script src="./cashout.js"></script>
+
+    <script src="./feature.js"></script>
+
+    <script src="./transfer.js"></script>
+</body>
+</html>
